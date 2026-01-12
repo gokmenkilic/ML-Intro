@@ -95,3 +95,29 @@ Jaehoon Cha and Jeyan Thiyagalingam, Scientific Machine Learning Research Group 
 
 We would like to thank Dr Richard Regan, Dr Clare Jenner and Professor Mark Wilkinson from DiRAC for funding and facilitating this project. We also would like to thank Professor Nikos Konstantinidis and Dr Chris Backhouse from University College London, for very useful suggestions and discussions. 
 
+## 5. Setup
+
+The Notebooks are written in Python. You can set up your environment using either `pip` or `conda` using the provided configuration files. 
+
+## 5.1 Start Local or VM
+
+**Using Conda**
+This method handles all system dependencies automatically.
+
+```bash
+conda env create -f environment.yml
+conda activate ml-intro
+jupyter notebook
+
+```
+
+**Using pip**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+# Install requirements
+pip install -r requirements.txt
+
+# Start Jupyter
+jupyter notebook
