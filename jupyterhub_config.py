@@ -1,0 +1,6 @@
+c.JupyterHub.authenticator_class = 'ltiauthenticator.lti13.LTI13Authenticator'
+c.LTI13Authenticator.issuer = 'https://training-academy.dirac.ac.uk'
+c.LTI13Authenticator.client_id = 'eujrNUVtQria5Sp'
+c.LTI13Authenticator.jwks_endpoint = 'https://training-academy.dirac.ac.uk/mod/lti/certs.php'
+c.LTI13Authenticator.authorize_url = 'https://training-academy.dirac.ac.uk/mod/lti/auth.php'
+c.LTI13Authenticator.token_url = 'https://training-academy.dirac.ac.uk/mod/lti/token.php'
