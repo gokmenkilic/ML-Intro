@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - jupyterhub-ltiauthenticator
   - python>=3.8
   - tensorflow
   - numpy
