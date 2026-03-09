@@ -31,18 +31,18 @@ Azimuth, Keycloak and Moodle must work together. Understanding who controls what
 
 ```mermaid
 graph TD
-    subgraph COSMA["☁️ COSMA / Durham"]
+    subgraph COSMA["☁️ COSMA / Durham  —  External (Not Under Our Control)"]
         KC["🔐 Keycloak 26<br/>portal.azimuth.cosma.dur.ac.uk<br/>Realm: az-diractraining"]
-        AZ["🌐 Azimuth Identity Provider<br/>Single Sign-On"]
+        AZ["🌐 Azimuth Identity Provider<br/>OpenID Connect / OIDC<br/>University SSO"]
         KC <-->|"OIDC federation"| AZ
     end
 
     subgraph OURS["🖥️ Our Control"]
-        ML["📓 JupyterHub<br/>Kubernetes: ml-intro<br/>"]
-        MO["🎓 Moodle LMS<br/>training-academy.dirac.ac.uk<br/>"]
+        ML["📓 JupyterHub<br/>Kubernetes: ml-intro<br/>Helm chart: jupyterhub-4.2.0"]
+        MO["🎓 Moodle LMS<br/>training-academy.dirac.ac.uk<br/>Admin access ✅"]
     end
 
-    subgraph USERS["👩‍💻 User Browser"]
+    subgraph STUDENT["👩‍💻 Student Browser"]
         BR["Course page → notebook activity<br/>Opens embedded iFrame"]
     end
 
@@ -53,9 +53,8 @@ graph TD
 
     style COSMA fill:#fff8f0,stroke:#f5a623
     style OURS fill:#f0f5fc,stroke:#1a4f8a
-    style USER fill:#f0faf5,stroke:#1e7a4a
+    style STUDENT fill:#f0faf5,stroke:#1e7a4a
 ```
----
 
 *Report prepared: March 6, 2026 &nbsp;*
 
