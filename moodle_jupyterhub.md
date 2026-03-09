@@ -53,7 +53,7 @@ graph TD
 
     style COSMA fill:#fff8f0,stroke:#f5a623
     style OURS fill:#f0f5fc,stroke:#1a4f8a
-    style USSER fill:#f0faf5,stroke:#1e7a4a
+    style USER fill:#f0faf5,stroke:#1e7a4a
 ```
 
 *Report prepared: March 6, 2026 &nbsp;*
