@@ -1,4 +1,4 @@
-# Moodle + JupyterHub Integration
+# Moodle - JupyterHub Integration
 ## Progress Report — 4-6 March 2026
 
 > **Platform:** Azimuth &nbsp;|&nbsp; **Cluster:** ml-intro (Kubernetes) &nbsp;|&nbsp;
@@ -38,7 +38,7 @@ graph TD
     end
 
     subgraph OURS["🖥️ Our Control"]
-        ML["📓 JupyterHub<br/>Kubernetes: ml-intro<br/>Helm chart: jupyterhub-4.2.0"]
+        ML["📓 JupyterHub<br/>Kubernetes: ml-intro<br/>"]
         MO["🎓 Moodle LMS<br/>training-academy.dirac.ac.uk<br/>Admin access ✅"]
     end
 
