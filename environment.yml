@@ -1,0 +1,21 @@
+name: ml-intro
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - jupyterhub-ltiauthenticator
+  - python>=3.8
+  - tensorflow
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - h5py
+  - pytables
+  - tqdm
+  - jupyter
+  - notebook
+  - ipykernel
+  - ipywidgets
